@@ -13,16 +13,33 @@
     <!-- Navbar (COMPLETAR: agregar logo, links activos, menú colapsable) -->
     <nav class="navbar navbar-expand-md navbar-dark bg-primary sticky-top">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="index.html">Mi Blog</a>
-            <!-- TODO: agregar toggler y nav-items -->
+        <a class="navbar-brand fw-bold" href="index.html">Mi Blog</a>
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">Acerca de mí</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contacto</a>
+                </li>
+            </ul>
+            </div>
         </div>
     </nav>
 
     <!-- Hero section -->
-    <header class="bg-gradient text-white py-5">
+    <header class="bg-primary bg-gradient text-white py-5">
         <div class="container text-center">
             <h1 class="display-4">Bienvenido a Mi Blog</h1>
-            <p class="lead">Historias, tecnología y reflexiones</p>
+            <p class="lead">Historias y reflexiones</p>
         </div>
     </header>
 
@@ -37,23 +54,47 @@
                     <div class="card h-100 shadow-sm">
                         <img src="assets/images/article-1.jpg" class="card-img-top" alt="Artículo 1">
                         <div class="card-body">
-                            <h5 class="card-title">Primer Artículo</h5>
-                            <p class="card-text text-muted">Autor: Tu Nombre</p>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                            <h3 class="card-title h5">El imperio Final</h3>
+                            <p class="card-text text-muted">Autor: Eliam Vargas</p>
+                            <p class="card-text">El inicio de todo Mistborn. Conoce a la banda de ladrones mas ambiciosa de todas</p>
                             <a href="#" class="btn btn-primary btn-sm">Leer más</a>
                         </div>
                     </div>
                 </div>
-                <!-- TODO: agregar 2 más -->
+                <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm">
+                <img src="assets/images/article-2.jpg" class="card-img-top" alt="Artículo 2">
+                <div class="card-body">
+                    <h3 class="card-title h5">El pozo de la ascension</h3>
+                    <p class="card-text text-muted">Autor: Eliam Vargas</p>
+                    <p class="card-text">El mundo se esta acabando sin explicacion, nuestros heroes buscan solucionarlo a travez de la profecia</p>
+                    <a href="#" class="btn btn-primary btn-sm">Leer más</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm">
+                <img src="assets/images/article-3.jpg" class="card-img-top" alt="Artículo 3">
+                <div class="card-body">
+                    <h3 class="card-title h5">El Heroe de las Heras</h3>
+                    <p class="card-text text-muted">Autor: Eliam Vargas</p>
+                    <p class="card-text">El mundo se expande y culmina la primera trilogia de Mistborn</p>
+                    <a href="#" class="btn btn-primary btn-sm">Leer más</a>
+                </div>
+            </div>
+        </div>
             </div>
         </div>
     </main>
 
-    <!-- Footer -->
-    <footer class="bg-dark text-white py-4 mt-5">
+    <footer class="bg-dark text-white py-4 mt-auto">
         <div class="container text-center">
-            <p>&copy; 2026 Mi Blog. Todos los derechos reservados.</p>
-            <!-- TODO: agregar redes sociales -->
+        <p class="mb-2">&copy; 2026 Eliam Vargas. Todos los derechos reservados.</p>
+        <div>
+            <a href="https://github.com/TheLocios" target="_blank" class="text-white text-decoration-none mx-2">GitHub</a>
+            <a href="https://www.instagram.com/eliamjvds/" target="_blank" class="text-white text-decoration-none mx-2">Instagram</a>
+        </div>
         </div>
     </footer>
 
